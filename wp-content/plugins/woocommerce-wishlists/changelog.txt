@@ -1,0 +1,94 @@
+*** WooCommerce Wishlist Changelog ***
+2013.11.14 - version 1.3.2 
+	* Fix:  When adding an item to the cart from the edit list screen, stay on the edit list screen. 
+	* Update: Modify the filter call to woocommerce_add_cart_item_data to add the variation_id argument. 
+
+2013.11.12 - version 1.3.1
+	* New: When items are added from a wishlist to the cart, the title of the wishlist is shown on the cart and orders. 
+	* New: New options in the Wishlist settings to automatically remove items from a list.  
+		 - Items will only be removed from a wishlist if the wishlist owner is the customer who added the item to the cart from the list.  
+		 - Items will be removed, or have the list quantity deducted by the actual amount the customer ordered. 
+		 - You can choose which order status you would like to have the items removed at.  The default is "completed". 
+
+2013.11.06 - version 1.3.0
+	* New:  Status and sharing filters on wishlist admin screen. 
+	* New:  Admin search now includes the First Name, Last Name and Email Address fields. 
+	* New:  Show account on dashboard when list is associated to a user. 
+
+2013.10.31 - version 1.2.10
+	* Remove session start
+
+2013.08.28 - version 1.2.9
+	* Fixed update key
+
+2013.08.28 - version 1.2.8
+	* Update: Modified variable product handler to add the nice name of a custom attribute to the list
+		rather than the slug.
+
+2013.08.21 - version 1.2.7
+	* Fix: Add to cart when viewing someone elses shared list.
+	* Update: Change from woocommerce_in_cart_product_title to woocommerce_in_wishlist_product_title.
+	* Update: Modified facebook share link to use FB's new format and a modal popup.
+
+2013.08.20 - version 1.2.6
+	* Update: Added two more localization strings
+
+2013.08.15 - version 1.2.5
+	* Update: external products are not supported.  Add to wishlist button removed from the single product page.
+
+2013.08.13 - version 1.2.4
+	* Fix:  Support multiple email recipients in the share via email form.
+	* Fix:  Clear up a notice when adding an item to the wishlist.
+
+2013.08.03 - version 1.2.3
+	* Update: Added missing localization strings
+	* Update: Change from woocommerce_in_cart_product_title to woocommerce_in_wishlist_product_title
+
+2013.07.16 - version 1.2.2
+	* Update:  Clean up older javascript.
+	* Update: Javascript to check for length of bundles or variations before attempting to move the wishlist wrapper.
+
+2013.07.11 - version 1.2.1
+	* Update: Compatibility with product bundles when variable products are in the bundle.
+	* Update: Use wc_print_messages for latest version of WooCommerce
+
+2013.06.23 - version 1.2.0
+	* Update: Moved menu position below core woocommerce items.
+
+2013.06.17 - version 1.1.9
+	* Update:  Moved email modal template to footer to prevent z-index issues.
+
+2013.06.13 - version 1.1.8
+	* Fix: Check if date is present on list item before attempting to sort.
+
+2013.05.30 - version 1.1.7
+	* Fix:  Incorrect redirect when navigate directly to the Edit List page without selecting a list first.
+
+2013.05.29 - version 1.1.6
+	* Update: More fixes for the email button and third party themes that are capturing the click event and stopping it.
+
+2013.05.23 - version 1.1.5
+    * Update:  Change selector on the email modal to be compatible with some third party themes that break it.
+
+2013.05.22 - version 1.1.4
+    * Update: Use closest form to the add to wishlist rather than form.cart.
+        This is because some theme authors remove the cart class from the main product form.
+
+2013.05.07 - version 1.1.3
+    * Update:  Loaded text domain wc_wishlist and created empty lang folder.
+
+2013.05.01 - version 1.1.2
+    * Fixes sharing problems for unauthenticated users.
+
+2013.04.10 - version 1.1.1
+ * Modified add-to-wishlist popup to allow it to work when used inside another modal window.
+ * Fixed send email button code
+
+2013.04.06 - version 1.1.0
+ * Check for post before processing templates
+
+2013.04.02 - version 1.0.1
+ *Remove call by reference in item collection class.
+
+2013.03.22 - version 1.0
+ *Initial Release
